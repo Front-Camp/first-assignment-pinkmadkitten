@@ -8,7 +8,7 @@
  * isObject(null); // false
  */
 const isObject = data => {
-  /* your logic here...*/
+  return typeof data === "object" && data !== null && Object.prototype.toString.call(data).indexOf("Array") === -1;
 };
 
 export default isObject;
